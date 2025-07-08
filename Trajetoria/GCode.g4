@@ -1,12 +1,5 @@
-// Define que esta é uma gramática ANTLR 4 chamada 'GCode'
-// O nome do ficheiro deve ser GCode.g4
-grammar GCode;
 
-/*
- * =============================================================================
- * REGRAS DO PARSER (ANALISADOR SINTÁTICO) - Versão Corrigida
- * =============================================================================
- */
+grammar GCode;
 
 // A regra inicial: um programa é uma ou mais linhas, seguidas pelo fim.
 prog: linha+ fimPrograma EOF;
@@ -38,12 +31,6 @@ valor: (PLUS | MINUS)? (INT | FLOAT);
 // Define o comando de fim de programa.
 comandoFim: M30;
 
-
-/*
- * =============================================================================
- * REGRAS DO LEXER (ANALISADOR LÉXICO) - Sem alterações
- * =============================================================================
- */
 
 // Códigos G
 G00: 'G00' | 'G0';
