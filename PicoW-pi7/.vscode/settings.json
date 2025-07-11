@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "compare": "c",
+        "cstdint": "c",
+        "invkin.h": "c"
+    }
+}

@@ -1,0 +1,5 @@
+build
+.cache
+
+# Ignore MacOS file system related.
+**/*.DS_Store*
